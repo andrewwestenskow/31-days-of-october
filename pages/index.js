@@ -10,11 +10,11 @@ import data from '../data/data'
 const Home = () => (
   <div className='Home'>
     <Header/>
-    <Footer/>
     <Description/>
     {data.map(element => {
       return <Week key={element.week} data={element}/>
     })}
+    <Footer/>
   </div>
 )
 

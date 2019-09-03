@@ -1,6 +1,7 @@
 import React from 'react'
 import bigger_movies from '../assets/bigger_movies.png'
 import powered from '../assets/powered.png'
+import '../styles/Home.scss'
 
 const Footer = () => {
   return (
