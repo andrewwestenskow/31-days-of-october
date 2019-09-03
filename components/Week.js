@@ -3,18 +3,16 @@ import '../styles/Week.scss'
 
 
 const Week = (props) => {
-  let id
-  if(props.data.week === 2){
-    id = 'hill-house'
-  }
+  console.log(props.data)
   return (
     <div className='Week'>
-      <h1>{props.data.details.theme}</h1>
+      <h1>Week {props.data.week} (Oct. {props.data.details.start} - Oct. {props.data.details.end}): {props.data.details.theme}</h1>
       {props.data.films.map(element => {
         return (
-          <div id={id} className='film'>
-            <div class="film-content">
+          <div key={element.title} className='film'>
+            <div className="film-content">
               <h2>{element.title}</h2>
+              <div className="line"></div>
               <h4>By: {element.director}</h4>
               <p>Runtime: {element.runtime} minutes</p>
               <p>Released: {element.released}</p>
