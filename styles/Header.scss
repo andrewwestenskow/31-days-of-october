@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100&display=swap');
+
+.Header{
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  padding: 10px;
+  font-weight: 100;
+  h2{
+    color: #eeedae;
+    font-size: 1.5rem;
+  }
+  h3{
+    color: red;
+    font-size: 1.8rem;
+  }
+  h1{
+    color: white;
+    font-size: 5rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: center;
+    margin: 20px 0;
+  }
+}
