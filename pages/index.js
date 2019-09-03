@@ -9,12 +9,14 @@ import data from '../data/data'
 
 const Home = () => (
   <div className='Home'>
-    <Header/>
-    <Description/>
-    {data.map(element => {
-      return <Week key={element.week} data={element}/>
-    })}
-    <Footer/>
+    <Header />
+    <Description />
+    <div className="film-hold">
+      {data.map(element => {
+        return <Week key={element.week} data={element} />
+      })}
+    </div>
+    <Footer />
   </div>
 )
 

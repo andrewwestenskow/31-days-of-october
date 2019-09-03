@@ -48,13 +48,18 @@
   width: 100vw;
 }
 
+.film-hold{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // border: 1px solid white;
+}
+
 .Footer{
   width: 100%;
   display: flex;
-  // justify-content: space-between;
   align-items: center;
-  // padding: 0 20px;
-  // background: white;
 }
 
 .corner-logo{
