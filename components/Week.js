@@ -14,11 +14,12 @@ const Week = (props) => {
               <h2>{element.title}</h2>
               <div className="line"></div>
               <h4>Director: {element.director}</h4>
-              <p>Runtime: {element.runtime} minutes</p>
-              <p>Released: {element.released}</p>
+              <p><strong>Runtime:</strong> {element.runtime} minutes</p>
+              <p><strong>Released:</strong> {element.released}</p>
               <p className='synopsis'>{element.synopsis}</p>
             </div>
             <img className='poster' src={element.poster} alt={element.title} />
+            <p class='mobile-synopsis'>{element.synopsis}</p>
           </div>)
       })}
     </div>
