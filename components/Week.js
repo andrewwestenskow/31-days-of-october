@@ -13,10 +13,10 @@ const Week = (props) => {
             <div className="film-content">
               <h2>{element.title}</h2>
               <div className="line"></div>
-              <h4>By: {element.director}</h4>
+              <h4>Director: {element.director}</h4>
               <p>Runtime: {element.runtime} minutes</p>
               <p>Released: {element.released}</p>
-              <p>{element.synopsis}</p>
+              <p className='synopsis'>{element.synopsis}</p>
             </div>
             <img className='poster' src={element.poster} alt={element.title} />
           </div>)

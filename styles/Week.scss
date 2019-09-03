@@ -16,6 +16,9 @@
   .film:nth-child(odd){
     align-self: flex-end;
     justify-content: space-between;
+    img{
+      margin-left: 10px;
+    }
     .film-content{
       width: 60%;
     }
@@ -38,7 +41,12 @@
   color: #BFB7B6;
   .film-content{
     h2{
+      // color: black;
       font-size: 3rem;
+    }
+    .synopsis{
+      font-size: 1.2rem;
+      margin-top: 15px;
     }
   }
   .poster{
@@ -47,10 +55,32 @@
     min-height: 375px;
     max-height: 375px;
   }
+
 }
 
-#hill-house{
-  align-self: flex-start;
-  flex-direction: row-reverse;
-  justify-content: flex-start;
+@media screen and (max-width: 700px) {
+  .film{
+    border: 1px solid white;
+    // flex-direction: column;
+    .film-content{
+      width: 90%;
+      .synopsis{
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px){
+  .film{
+    flex-direction: column !important;
+    align-items: center;
+    img{
+      margin: 0 !important;
+      margin-top: 10px !important;
+    }
+  }
+  .film-content{
+    width: 100% !important;
+  }
 }
