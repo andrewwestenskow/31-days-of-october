@@ -3,6 +3,8 @@ import '../styles/Home.scss'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Description from '../components/Description'
+import Week from '../components/Week'
+import data from '../data/data'
 
 
 const Home = () => (
@@ -10,6 +12,9 @@ const Home = () => (
     <Header/>
     <Footer/>
     <Description/>
+    {data.map(element => {
+      return <Week key={element.week} data={element}/>
+    })}
   </div>
 )
 

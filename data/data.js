@@ -1,5 +1,6 @@
-module.exports = {
-  week1: {
+module.exports = [
+  {
+    week: 1,
     details: {
       theme: 'Transformation',
       start: 1,
@@ -64,7 +65,8 @@ module.exports = {
       },
     ]
   },
-  week2: {
+  {
+    week: 2,
     details: {
       theme: 'A House Divided',
       start: 6,
@@ -87,7 +89,8 @@ module.exports = {
       }
     ]
   },
-  week3: {
+  {
+    week: 3,
     details: {
       theme: 'Scares Abroad',
       start: 13,
@@ -152,7 +155,8 @@ module.exports = {
       },
     ]
   },
-  week4: {
+  {
+    week: 4,
     details: {
       theme: 'Classics Week',
       start: 20,
@@ -217,7 +221,8 @@ module.exports = {
       },
     ]
   },
-  week5: {
+  {
+    week: 5,
     details: {
       theme: 'House Picks',
       start: 27,
@@ -254,4 +259,4 @@ module.exports = {
       }
     ]
   }
-}
+]
