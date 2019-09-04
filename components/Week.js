@@ -24,19 +24,18 @@ const Week = (props) => {
               <p className='synopsis'>{element.synopsis}</p>
               {n || h || a ?
                 <div className='streaming-hold'>
-                  <h3>Available On:</h3>
+                  <h3>Stream it on:</h3>
                   <>{n ? <img className='streaming-logo' src={netflix} alt='netflix' />: <></>}</>
                   <>{h ? <img className='streaming-logo' src={hulu} alt='hulu' />: <></>}</>
                   <>{a ? <img className='streaming-logo' src={amazon} alt='amazon prime' />: <></>}</>
                 </div> : <></>}
                 <a className='streaming-link' target='blank' href={element.justWatch}>Find where to stream <FontAwesomeIcon icon={faExternalLinkAlt}/></a>
-                
             </div>
             <img className='poster' src={element.poster} alt={element.title} />
             <p className='mobile-synopsis'>{element.synopsis}</p>
             {n || h || a ?
                 <div className='streaming-hold-mobile'>
-                  <h3>Available On:</h3>
+                  <h3>Stream it on:</h3>
                   <>{n ? <img className='streaming-logo' src={netflix} alt='netflix' />: <></>}</>
                   <>{h ? <img className='streaming-logo' src={hulu} alt='hulu' />: <></>}</>
                   <>{a ? <img className='streaming-logo' src={amazon} alt='amazon prime' />: <></>}</>
