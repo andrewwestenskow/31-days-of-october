@@ -256,6 +256,20 @@ module.exports = [
           amazonPrime: false
         },
         justWatch: 'https://www.justwatch.com/us/movie/the-babadook'
+      },
+      {
+        title: 'What We Do in the Shadows',
+        director: 'Taika Waititi',
+        synopsis: `Vampire housemates try to cope with the complexities of modern life and show a newly turned hipster some of the perks of being undead.`,
+        released: 2014,
+        runtime: 86,
+        poster: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/4bqqrtzY9vVQeEcqyqWfTJWmpD9.jpg',
+        availableOn: {
+          netflix: false,
+          hulu: false,
+          amazonPrime: false
+        },
+        justWatch: 'https://www.justwatch.com/us/movie/what-we-do-in-the-shadows'
       }
     ]
   }

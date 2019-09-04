@@ -38,6 +38,7 @@
   padding: 10px;
   background: #92140C;
   box-shadow: 0 0 15px black;
+  position: relative;
   color: #BFB7B6;
   .film-content{
     h2{
@@ -51,7 +52,7 @@
       font-size: 1.2rem;
     }
     .synopsis{
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       margin-top: 15px;
     }
   }
@@ -66,6 +67,14 @@
 
 .mobile-synopsis{
   display: none
+}
+
+.streaming-hold-mobile{
+  display: none;
+}
+
+.streaming-link-mobile{
+  display: none;
 }
 
 @media screen and (max-width: 700px) {
@@ -102,4 +111,43 @@
     margin-top: 10px;
     font-size: 1.2rem;
   }
+
+  .streaming-hold-mobile{
+    display: block;
+    align-self: flex-start;
+  }
+
+  .streaming-link-mobile{
+    display: block;
+    align-self: flex-start;
+    color: #608eb1;
+  }
+
+  .streaming-hold{
+    display: none;
+  }
+
+  .streaming-link{
+    display: none;
+  }
+}
+
+
+
+.streaming-hold{
+  margin-top: 15px;
+}
+
+.streaming-link{
+  font-size: 1.5rem;
+  color: #608eb1;
+  margin-top: 10px;
+  // position: absolute;
+  // bottom: 5px;
+}
+
+.streaming-logo{
+  width: 75px;
+  border-radius: 20px;
+  margin: 0 !important;
 }
