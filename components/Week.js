@@ -29,7 +29,7 @@ const Week = (props) => {
                   <>{h ? <img className='streaming-logo' src={hulu} alt='hulu' />: <></>}</>
                   <>{a ? <img className='streaming-logo' src={amazon} alt='amazon prime' />: <></>}</>
                 </div> : <></>}
-                <a className='streaming-link' target='blank' href={element.justWatch}>Find where to stream <FontAwesomeIcon icon={faExternalLinkAlt}/></a>
+                <a className='streaming-link' target='blank' href={element.justWatch}>Find where to stream <FontAwesomeIcon icon={faExternalLinkAlt} className='share-icon'/></a>
             </div>
             <img className='poster' src={element.poster} alt={element.title} />
             <p className='mobile-synopsis'>{element.synopsis}</p>
@@ -40,7 +40,7 @@ const Week = (props) => {
                   <>{h ? <img className='streaming-logo' src={hulu} alt='hulu' />: <></>}</>
                   <>{a ? <img className='streaming-logo' src={amazon} alt='amazon prime' />: <></>}</>
                 </div> : <></>}
-                <a className='streaming-link-mobile' target='blank' href={element.justWatch}>Find where to stream <FontAwesomeIcon icon={faExternalLinkAlt}/></a>
+                <a className='streaming-link-mobile' target='blank' href={element.justWatch}>Find where to stream <FontAwesomeIcon icon={faExternalLinkAlt} className='share-icon'/></a>
           </div>)
       })}
     </div>
