@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Knewave|Raleway&display=swap');
 
 .Header{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Knewave', cursive;
   width: 100%;
   padding: 10px;
   font-weight: 100;
   h2{
-    color: #eeedae;
+    font-family: 'Raleway';
+    text-align: center;
     font-size: 1.5rem;
   }
   h3{
@@ -14,11 +15,12 @@
     font-size: 1.8rem;
   }
   h1{
-    color: white;
-    font-size: 5rem;
-    font-weight: 700;
-    text-decoration: underline;
+    color: #333;
+    font-family: 'Knewave', cursive;
+    font-size: 3.5rem;
     text-align: center;
     margin: 20px 0;
+
+
   }
 }

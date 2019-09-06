@@ -3,8 +3,9 @@ import '../styles/Week.scss'
 import hulu from '../assets/hulu.png'
 import amazon from '../assets/amazon.png'
 import netflix from '../assets/netflix.png'
-import {faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import more from '../assets/more.png'
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const Week = (props) => {
@@ -22,25 +23,27 @@ const Week = (props) => {
               <p><strong>Runtime:</strong> {element.runtime} minutes</p>
               <p><strong>Released:</strong> {element.released}</p>
               <p className='synopsis'>{element.synopsis}</p>
-              {n || h || a ?
+              <a className='streaming-link' target='blank' href={element.justWatch}>
                 <div className='streaming-hold'>
-                  <h3>Stream it on:</h3>
-                  <>{n ? <img className='streaming-logo' src={netflix} alt='netflix' />: <></>}</>
-                  <>{h ? <img className='streaming-logo' src={hulu} alt='hulu' />: <></>}</>
-                  <>{a ? <img className='streaming-logo' src={amazon} alt='amazon prime' />: <></>}</>
-                </div> : <></>}
-                <a className='streaming-link' target='blank' href={element.justWatch}>Find where to stream <FontAwesomeIcon icon={faExternalLinkAlt} className='share-icon'/></a>
+                  <h3>Streaming options: </h3>
+                  <>{n ? <img className='streaming-logo' src={netflix} alt='netflix' /> : <></>}</>
+                  <>{h ? <img className='streaming-logo' src={hulu} alt='hulu' /> : <></>}</>
+                  <>{a ? <img className='streaming-logo' src={amazon} alt='amazon prime' /> : <></>}</>
+                  {/* <FontAwesomeIcon icon={faExternalLinkAlt} className='share-icon' /> */}
+                  <img className='streaming-logo' src={more}/>
+                </div>
+              </a>
             </div>
             <img className='poster' src={element.poster} alt={element.title} />
             <p className='mobile-synopsis'>{element.synopsis}</p>
-            {n || h || a ?
+            {/* {n || h || a ?
                 <div className='streaming-hold-mobile'>
                   <h3>Stream it on:</h3>
                   <>{n ? <img className='streaming-logo' src={netflix} alt='netflix' />: <></>}</>
                   <>{h ? <img className='streaming-logo' src={hulu} alt='hulu' />: <></>}</>
                   <>{a ? <img className='streaming-logo' src={amazon} alt='amazon prime' />: <></>}</>
-                </div> : <></>}
-                <a className='streaming-link-mobile' target='blank' href={element.justWatch}>Find where to stream <FontAwesomeIcon icon={faExternalLinkAlt} className='share-icon'/></a>
+                </div> : <></>} */}
+            <a className='streaming-link-mobile' target='blank' href={element.justWatch}><FontAwesomeIcon icon={faExternalLinkAlt} className='share-icon' /></a>
           </div>)
       })}
     </div>
