@@ -3,8 +3,20 @@
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  overflow: visible;
+  margin-top: 25px;
   .description-box{
     width: 80%;
-    background: #f9f7b4;
+    box-shadow: 0px 0px 7px #00000044;
+    max-width: 1200px;
+    background: linear-gradient(to right, #cec8c6 5%, #d8cfc9 60%, #cec8c6 90%);
+    display: flex;
+    .description-logo{
+      max-width: 250px;
+      min-width: 250px;
+    };
+    article{
+      margin-left: 10px;
+    }
   }
 }
