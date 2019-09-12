@@ -18,7 +18,7 @@ const Home = () => (
       type="image/x-icon"/>
     </Head>
     <Header />
-    <Description />
+    {/* <Description /> */}
     {/* <div style={{maxWidth: '1200px', margin: '20px auto'}} className="line"></div> */}
     <div className="film-hold">
       {data.map(element => {

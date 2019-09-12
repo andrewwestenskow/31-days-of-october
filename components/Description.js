@@ -9,9 +9,10 @@ const Description = (props) => {
           <img src={bigger_movies} alt="We watch movies" className="description-logo"/>
           <article>
 
-          <h2>31 Days of October celebrates the best that horror has to offer.</h2>
+          <h2>What is 31 Days of October?</h2>
+            <p>By: Andrew Westenskow</p>
           <div className="line"></div>
-          <p className='description-text'>Each year we set aside the month of October to watch as many horror films as we can</p>
+          <p className='description-text'>Horror serves an important and often overlooked function in the world of cinema.  </p>
           </article>
       </div>
     </div>
